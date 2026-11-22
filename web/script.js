@@ -45,6 +45,23 @@ const playerVideo = document.querySelector('#player-video');
 const playerTitle = document.querySelector('#player-title');
 const playerCategory = document.querySelector('#player-category');
 const closePlayer = document.querySelector('.player__close');
+const intro = document.querySelector('.hero');
+
+let introFadePending = false;
+function updateIntroFade() {
+  introFadePending = false;
+  const fadeDistance = Math.max(intro.offsetHeight, window.innerHeight * 0.75);
+  const progress = Math.min(1, Math.max(0, window.scrollY / fadeDistance));
+  intro.style.setProperty('--intro-opacity', String(1 - progress));
+}
+
+window.addEventListener('scroll', () => {
+  if (introFadePending) return;
+  introFadePending = true;
+  requestAnimationFrame(updateIntroFade);
+}, { passive: true });
+window.addEventListener('resize', updateIntroFade);
+updateIntroFade();
 
 function makeProject(project, index) {
   const card = document.createElement('article');
