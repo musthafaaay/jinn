@@ -1,0 +1,16 @@
+# Keep the source library on this computer; publish only the nine selected clips.
+*.mp4
+!After effects/3D/3d.mp4
+!After effects/Speed Ramp/ramp.mp4
+!After effects/ad video/animation.mp4
+!Davinci Resolve/Grade & masking/Portfolio3.mp4
+!Davinci Resolve/shot match/SHORT MATCH.mp4
+!Davinci Resolve/fast cut/pr 1.mp4
+!Premier pro/ad video/pr 09 01.mp4
+!Premier pro/content/project 1 mp4.mp4
+!Premier pro/green screen/Pr 06.mp4
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#121311" />
+    <meta name="description" content="Selected edits, motion design and colour work." />
+    <title>Motion / Film — Selected Work</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Motion Film home"><span class="wordmark__icon">M</span><span>MOTION<span class="wordmark__slash">/</span>FILM</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#work">Work <span>01</span></a>
+        <a href="#about">About <span>02</span></a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="status-dot"></span> Video editor&nbsp; / &nbsp;Motion designer</p>
+          <h1 id="hero-title">Every cut<br />has a <span>point of view.</span></h1>
+          <div class="hero__bottom">
+            <p>Rhythm, colour and movement — shaped into stories that stay with you.</p>
+            <a class="text-link" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Abstract moving forms in lime, blue and violet">
+          <div class="hero-art__label hero-art__label--top">A frame in motion <span>001 / 026</span></div>
+          <div class="hero-art__orb hero-art__orb--one"></div>
+          <div class="hero-art__orb hero-art__orb--two"></div>
+          <div class="hero-art__ring hero-art__ring--one"></div>
+          <div class="hero-art__ring hero-art__ring--two"></div>
+          <div class="hero-art__cross">✳</div>
+          <div class="hero-art__label hero-art__label--bottom"><span>POST / PRODUCTION</span><span>COLOUR — MOTION — EDIT</span></div>
+        </div>
+        <div class="hero__index"><span>PORTFOLIO / 2026</span><span>SCROLL TO DISCOVER&nbsp; ↓</span></div>
+      </section>
+
+      <section class="work section-wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Made to <em>move.</em></h2></div>
+          <p class="section-intro">A selection of edits, colour studies and motion pieces. Choose a project to watch.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All work <span>09</span></button>
+          <button class="filter" type="button" data-filter="after-effects" aria-pressed="false">After Effects</button>
+          <button class="filter" type="button" data-filter="davinci" aria-pressed="false">DaVinci Resolve</button>
+          <button class="filter" type="button" data-filter="premiere" aria-pressed="false">Premiere Pro</button>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="about section-wrap" id="about" aria-labelledby="about-title">
+        <div class="about__lead"><p class="eyebrow">02 / The approach</p><h2 id="about-title">Cut with intent.<br /><em>Colour with feeling.</em></h2></div>
+        <div class="about__details">
+          <p class="about__body">From the first assembly to the final grade, I bring an editor’s sense of rhythm and a motion designer’s eye for detail to every frame.</p>
+          <div class="capabilities">
+            <div><span>01</span><p>Editing<br /><small>Story · rhythm · pace</small></p></div>
+            <div><span>02</span><p>Motion<br /><small>Animation · compositing</small></p></div>
+            <div><span>03</span><p>Finishing<br /><small>Colour · polish · delivery</small></p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact__inner">
+          <p class="eyebrow">Have a story in mind?</p>
+          <h2 id="contact-title">Let’s make<br /><em>it move.</em></h2>
+          <a class="contact-link" id="contact-link" href="mailto:hello@yourdomain.com">hello@yourdomain.com <span aria-hidden="true">↗</span></a>
+          <p class="contact-note">Replace the example email in <code>script.js</code> before publishing.</p>
+        </div>
+        <div class="contact__mark" aria-hidden="true">M</div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark wordmark--footer" href="#top"><span class="wordmark__icon">M</span><span>MOTION<span class="wordmark__slash">/</span>FILM</span></a><span>Independent video editing & motion design</span><a href="#top">Back to top ↑</a><span>© <span id="year">2026</span></span></footer>
+
+    <dialog class="player" id="player" aria-labelledby="player-title">
+      <div class="player__bar"><div><p class="eyebrow" id="player-category">Project preview</p><h2 id="player-title">Project title</h2></div><button class="player__close" type="button" aria-label="Close video">Close <span aria-hidden="true">×</span></button></div>
+      <video class="player__video" id="player-video" controls muted playsinline preload="metadata"></video>
+      <p class="player__hint">Press Esc or tap close to return to the work.</p>
+    </dialog>
+  </body>
+</html>
